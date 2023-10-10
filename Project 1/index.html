@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Hell</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>       
+    <script type="text/javascript" src="p5"></script>
+    </head>
+  <body>
+    <div id="container">
+        <div id="headerArea">
+            <div id="header"></div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://mspaintadventures.fandom.com/wiki"><img src="/Media/images/tini_sburb.png"> Offical Wiki</a></li>
+                    <li><a href="https://www.homestuck.com/"><img src="/Media/images/Mspa_icon.webp"> MSPaint Adventures</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="flex">
+            <aside id="sidebar" style="margin-right: 0px;">
+                <h2>WELCOME TO MY PERSONAL HELL</h2>
+                <p><b>This is basically just a website displaying the brainrot I've been suffering from since the 7th grade, I'm almost sorry for making this :D !</b></p>
+                <h2>Interested in MORE???</h2>
+                <p><b>I apologize for the loss of your sanity, but fine, have an assortment of spreadsheets of various completion</b></p>
+                <div class="box">
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1VGeqI_UZ9GkvHmwxN9v666EqGyTfxCpEBtyMpM8WvAE/edit?usp=sharing" target="_blank">Classpecting Cards</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1l8-KHvwebjh4BUm7CWnzgoln6ZOlLIxdpFvB5qoRh-Y/edit?usp=sharing" target="_blank">"The Mattster Sheet"</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/11NkkM3kLqnawNohIZyqv9zSeY54z6EoT0ryg0xyV2Vo/edit?usp=drive_link" target="_blank">The Expanded Extended Zodiac</a></li>
+                    </ul>
+                </div>
+                <div id="theDate">
+                    <span>
+                        <h3>
+                            Date:
+                        </h3>
+                    </span>
+                    <p id="date">
+                        <script>
+                            document.getElementById("date").innerHTML = getToday();
+                            
+                            function getToday (){
+                            
+                                var today = new Date();
+                                var dd = today.getDate();
+
+                                var mm = today.getMonth();
+                                var yyyy = today.getFullYear();
+                                
+                                if(dd<10){
+                                    dd="0"+dd
+                                }
+
+                                if(mm<10){
+                                    mm="0"+mm
+                                }
+
+                                today = mm+"/"+dd+"/"+yyyy;
+                                return today;
+
+                            }
+
+                                
+                                
+                        </script>
+                    </p>
+                </div>   
+            </aside>
+            <main>
+                
+                <div id="classpectWheel">
+                    
+                    <img id="space" class="aspect" src="/Media/images/aspects/Space_Aspect.svg">
+                    <img id="mind" class="aspect" src="/Media/images/aspects/Mind_Aspect.svg">
+                    <img id="hope" class="aspect" src="/Media/images/aspects/Hope_Aspect.svg">
+                    <img id="breath" class="aspect" src="/Media/images/aspects/Breath_Aspect.svg">
+                    <img id="life" class="aspect" src="/Media/images/aspects/Life_Aspect.svg">
+                    <img id="light" class="aspect" src="/Media/images/aspects/Light_Aspect.svg">
+                    <img id="heart" class="aspect" src="/Media/images/aspects/Heart_Aspect.svg">
+                    <a href="/html/aspects/time.html"><img id="time" class="aspect" src="/Media/images/aspects/Time_Aspect.svg"></a>
+                    <img id="void" class="aspect" src="/Media/images/aspects/Void_Aspect.svg">
+                    <img id="doom" class="aspect" src="/Media/images/aspects/Doom_Aspect.svg">
+                    <img id="blood" class="aspect" src="/Media/images/aspects/Blood_Aspect.svg">
+                    <img id="rage" class="aspect" src="/Media/images/aspects/Rage_Aspect.svg">
+                    <span id="classring">
+                        <svg version="1.1" id="elp-badge" class="badge"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="10 10 305 305" enable-background="new 0 0 189.1 189.1"
+                        xml:space="preserve">
+                            <path id="SVGID_x5F_2_x5F_" fill="none" d="M31.1,129c10.4-62.1,69.2-104,131.4-93.6s104,69.2,93.6,131.4
+                            c-10.4,62.1-69.2,104-131.4,93.6C62.5,249.9,20.6,191.1,31.1,129z"/>
+                            <text text-anchor="middle">
+                                <textPath xlink:href="#SVGID_x5F_2_x5F_" startOffset="180">
+                                    <tspan class="badge-header" font-size="11.25" fill="#afff00">&bull; LORD &bull; WITCH &bull; KNIGHT &bull; MAGE &bull; BARD &bull; ROGUE &bull; SYLPH &bull;</tspan>
+                                </textPath>
+                            </text>
+                            <text text-anchor="middle">
+                                <textPath xlink:href="#SVGID_x5F_2_x5F_" startOffset="535">
+                                    <tspan class="badge-footer" fill="#afff00" font-size="11.25">MAID &bull; THIEF &bull; PRINCE &bull; SEER &bull; PAGE &bull; HEIR &bull; MUSE</tspan>
+                                </textPath>
+                            </text>
+                        </svg>
+                    </span>
+                </div>
+            </main>
+        </div> 
+    </div>
+  </body>
+</html>

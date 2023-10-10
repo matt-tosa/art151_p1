@@ -1,0 +1,274 @@
+:root {
+    /*images*/
+    --sburb: url(/Media/images/tini_sburb.png);
+    --mspa: url(https://mspaintadventures.fandom.com/wiki/File:Mspa_icon.png);
+    /* site colors */
+    --mainbg: #510606;
+    --text: white;
+    --sitebg: black;
+    --headoutline: #afff00;
+    --headbg: darkgreen;
+    --accent: #ff2106;
+    --hover: #bb1b1b;
+    --darkbg: #350404;
+    --sidebar: #510606;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: var(--sitebg);
+    background-size: 65px;
+    color: var(--text);
+    background-image: url(https://sadhost.neocities.org/images/tiles/num.gif);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration:none;
+}
+
+#header {
+    width: 100%;
+    background-color: var(--headbg);
+    height: 150px;
+    background-image: url(/Media/images/Homestuck_logo.png);
+    background-size: 100%;
+    border: 2px solid var(--headoutline);
+    margin-bottom: 10px;
+}
+
+/* nav */
+#navbar {
+    height: 40px;
+    background-color: var(--darkbg);
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* nav links*/
+#navbar li a {
+    color: var(--accent);
+    list-style: none;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+#navbar img{
+    height:16px;
+}
+
+ /* nav link on hover */
+#navbar li a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: var(--sidebar);
+    width: 250px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    margin-left: -10px;
+    padding-bottom: 4px;
+    list-style-image: var(--sburb);
+    color: var(--accent);
+}
+
+ /* sidebar link on hover */
+#sidebar li a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--mainbg);
+    flex: 1;
+    margin-left: 5px;
+    padding: 20px;
+    order: 2;
+}
+
+#sidebar {
+    order: 1;
+}
+
+h1, h2, h3 {
+    color: var(--accent);
+    margin-bottom: 3px;
+    background-color: var(--darkbg);
+}
+
+p {
+    margin: 3px;
+    font-style: bold;
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.h1 img{
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+
+#sign {
+    margin-top: 5px;
+    height: 230px;
+    width: 230px;
+}
+
+strong, b {
+    color: var(--text);
+}
+
+.box1 {
+    background-color: var(--hover);
+    padding: 5px;
+    margin-top: 10px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: larger;
+}
+.box2 {
+    background-color: var(--darkbg);
+    border: 1px solid var(--hover);
+    padding: 5px;
+    margin-top: 0px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: var(--darkbg);
+}
+
+#flex a.breath{
+    background-color: var(--sidebar);
+    color: #10e0ff;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#flex a.breath:hover{
+    background-color: #0052f2;
+}
+
+#flex a.space{
+    background-color: var(--sidebar);
+    color: #ffffff;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#flex a.space:hover{
+    background-color: #1e1e1e;
+}
+
+#flex a.doom{
+    background-color: var(--sidebar);
+    color: grey;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#flex a.doom:hover{
+    color: black;
+    background-color: #204020;
+}
+
+#flex a.rage{
+    background-color: var(--sidebar);
+    color: #9c4dad;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#flex a.rage:hover{
+    background-color: #2a1555;
+}
+
+.icon {
+    max-width: 15px;
+    max-height: 15px;
+    position: relative;
+    top: 4px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--accent);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ @media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #sidebar {
+    order: 2;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}

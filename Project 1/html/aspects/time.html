@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="time_files/p5.min.js"></script>
+        <script src="time_files/p5.sound.min.js"></script>
+        <title>Time Aspect</title>
+        <link rel="stylesheet" href="time_files/time.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="headerArea">
+                <div id="header"></div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                        <li><a href="https://mspaintadventures.fandom.com/wiki"><img src="time_files/tini_sburb.png"> Offical Wiki</a></li>
+                        <li><a href="https://www.homestuck.com/"><img src="time_files/Mspa_icon.webp"> MSPaint Adventures</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="flex">
+                <aside id="sidebar" style="margin-right: 0px;">
+                    <span class="h1"><img src="time_files/Time_Aspect.svg">TIME</span>
+                    <div>
+                        <canvas id="sign">
+                            <script src="time_files/sketch.js"></script>
+                        </canvas>
+                    </div>
+                    <div class="box1">
+                        Archetype
+                    </div>
+                    <div class="box2">
+                        The marching soldier.
+                    </div>
+                    <div class="box1">
+                        Associated Concepts
+                    </div>
+                    <div class="box2">
+                        repetition, cycles, consistency, predictability,
+ death, endings, continuation, motion, movement, eternity, stagnation, 
+machines, money, inertia, rythym, music
+                    </div>
+                    <div class="box1">
+                        Descriptors
+                    </div>
+                    <div class="box2">
+                        mechanical, repetitive, masculine, destructive, 
+finished, choice, precise, impatient, moments, velocity, musical, dance,
+ flowing
+                    </div>
+                </aside>
+                <main>
+                    <h3> Official Description:</h3>
+                    <p style="font-size: smaller;">
+                        "Those bound to the aspect of Time are fighters,
+ full stop. Their lives are often marked by struggle, not so much 
+because fate has it in for them, but because they are fundamentally 
+incapable of just accepting things as they come. They value action over 
+passive acceptance, even if that may not be the wisest or safest choice.
+ Don't try to tell a Time-bound to sit still and look pretty. They are 
+very goal-focused, and tend to value the destination over the journey, 
+and you won't find them making that journey in any traditional sort of 
+way. To quote cheesy posters found on many a guidance counselor's 
+wall-"impossible is just a word". If you need a miracle, they are who 
+you call. At their best, the Time-bound are empathetic and relentless 
+problem-solvers. At their worst they are ruthless, defensive, and 
+impulsive."
+                    </p>
+                    <div class="line"></div>
+                    <h3> Related Aspects</h3>
+                    <div class="line"></div>
+                    <p>Time's Inverse is <a class="breath" href="http://127.0.0.1:5500/html/aspects/breath.html">Breath <img class="icon" src="time_files/Breath_Aspect.svg"></a>, they share near as many themes and concepts as they oppose in the other, making them a complimentary, if volatile, pairing.</p>
+                    <div class="line"></div>
+                    <p>Time's Opposite is <a class="space" href="http://127.0.0.1:5500/html/aspects/space.html">Space <img class="icon" src="time_files/Space_Aspect.svg"></a>,
+ they are the ultimate antipodes, evenly cancelling eachother out. This 
+leads to a surprisingly stable relationship between them; a pleasant 
+surprise given they must work together to function.</p>
+                    <div class="line"></div>
+                    <p><a class="doom" href="http://127.0.0.1:5500/html/aspects/doom.html">Doom <img class="icon" src="time_files/Doom_Aspect.svg"></a> and Time's relationship as mirrors is not necessarily unique, but it is interesting, especially given <a class="doom" href="http://127.0.0.1:5500/html/aspects/doom.html">Doom <img class="icon" src="time_files/Doom_Aspect.svg"></a>
+ is also one of Time's Sibling Aspects. They function as "dark mirrors" 
+of one another, sharing a multitude of their themes and subjects, though
+ in slightly altered ways.</p>
+                    <div class="line"></div>
+                    <p>As stated above, <a class="doom" href="http://127.0.0.1:5500/html/aspects/doom.html">Doom <img class="icon" src="time_files/Doom_Aspect.svg"></a> is one of Time's sibling aspects, the other is <a class="rage" href="http://127.0.0.1:5500/html/aspects/rage.html">Rage <img class="icon" src="time_files/Rage_Aspect.svg"></a>. While the relationship between <a class="rage" href="http://127.0.0.1:5500/html/aspects/rage.html">Rage <img class="icon" src="time_files/Rage_Aspect.svg"></a> and Time is more difficult to understand than the relationship to <a class="doom" href="http://127.0.0.1:5500/html/aspects/doom.html">Doom <img class="icon" src="time_files/Doom_Aspect.svg"></a>, it becomes quite clear once you realize both symbolize cold, hard logic in addition to unstoppable forces / movement.</p>
+                <canvas id="defaultCanvas0" class="p5Canvas" style="width: 385.25px; height: 348.25px;" width="385" height="348"></canvas></main>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

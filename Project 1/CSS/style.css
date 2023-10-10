@@ -1,0 +1,353 @@
+:root {
+    /*images*/
+    --sburb: url(/Media/images/tini_sburb.png);
+    --mspa: url(https://mspaintadventures.fandom.com/wiki/File:Mspa_icon.png);
+    /* site colors */
+    --mainbg: #464646;
+    --text: black;
+    --sitebg: black;
+    --accent: #afff00;
+    --hover: #37ff18;
+    --headbg: darkgreen;
+    --darkbg: #555555;
+    --sidebar: #777777;
+    /*aspect colors*/
+    --time1: #ff2106; /*symbol*/
+    --time2: #8e1516; /*mid*/
+    --time3: #510606; /*dark*/
+    --space1: #ffffff; /*symbol*/
+    --space2: #2f2f2f; /*mid*/
+    --space3: #1e1e1e; /*dark*/
+    --mind1: #46fbc4; /*symbol*/
+    --mind2: #50b250; /*mid*/
+    --mind3: #3e6b1e; /*dark*/
+    --heart1: #bd1764; /*symbol*/
+    --heart2: #6b0829; /*mid*/
+    --heart3: #431024; /*dark*/
+    --light1: #f7fb4e; /*symbol*/
+    --light2: #f98100; /*mid*/
+    --light3: #fa4700; /*dark*/
+    --void1: #00164f; /*symbol*/
+    --void2: #033476; /*mid*/
+    --void3: #004cb2; /*dark*/
+    --hope1: #fdfdfd; /*symbol*/
+    --hope2: #ffe094; /*mid*/
+    --hope3: #ffc331; /*dark*/
+    --rage1: #9c4dad; /*symbol*/
+    --rage2: #6f37a0; /*mid*/
+    --rage3: #2a1555; /*dark*/
+    --breath1: #10e0ff; /*symbol*/
+    --breath2: #0086eb; /*mid*/
+    --breath3: #0052f2; /*dark*/
+    --blood1: #b90f15; /*symbol*/
+    --blood2: #3e1601; /*mid*/
+    --blood3: #2f0000; /*dark*/
+    --life1: #76c34e; /*symbol*/
+    --life2: #786b52; /*mid*/
+    --life3: #605542; /*dark*/
+    --doom1: #000000; /*symbol*/
+    --doom2: #242d26; /*mid*/
+    --doom3: #204020; /*dark*/
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: var(--sitebg);
+    background-size: 65px;
+    color: var(--text);
+    background-image: url(https://sadhost.neocities.org/images/tiles/num.gif);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration:none;
+}
+
+#header {
+    width: 100%;
+    background-color: var(--headbg);
+    height: 150px;
+    background-image: url(/Media/images/Homestuck_logo.png);
+    background-size: 100%;
+    border: 2px solid var(--accent);
+    margin-bottom: 10px;
+}
+
+/* nav */
+#navbar {
+    height: 40px;
+    background-color: var(--darkbg);
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* nav links*/
+#navbar li a {
+    color: var(--accent);
+    list-style: none;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+#navbar img{
+    height:16px;
+}
+
+ /* nav link on hover */
+#navbar li a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: var(--sidebar);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    margin-left: -10px;
+    padding-bottom: 4px;
+    list-style-image: var(--sburb);
+    color: var(--accent);
+}
+
+ /* sidebar link on hover */
+#sidebar li a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--mainbg);
+    flex: 1;
+    margin-left: 5px;
+    padding: 20px;
+    order: 2;
+}
+
+#classpectWheel {
+    height: 600px;
+    width: 600px;
+    border: var(--text) 20px solid;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.aspect {
+    width: 20%;
+    height: 20%;
+    border: var(--text) 5px solid;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 0px;
+}
+
+.aspect:hover {
+    scale: 1.1;
+}
+
+#space {
+    background-color: var(--space3);
+    position: relative;
+    top: 40%;
+    right: 11%;
+}
+
+#mind {
+    background-color: var(--mind3);
+    position: relative;
+    top: 15%;
+    right: 28%;
+}
+
+#hope {
+    background-color: var(--hope3);
+    position: relative;
+    bottom: 3%;
+    right: 32%;
+}
+
+#breath {
+    background-color: var(--breath3);
+    position: relative;
+    right: 25%;
+    bottom: 10%;
+}
+
+#life {
+    background-color: var(--life3);
+    position: relative;
+    left: 67.5%;
+    bottom: 24%;
+}
+
+#light {
+    background-color: var(--light3);
+    position: relative;
+    left: 65%;
+    bottom: 5.5%;
+}
+
+#time {
+    background-color: var(--time3);
+    position: relative;
+    left: 26%;
+    top: 19.25%;
+}
+
+#heart {
+    background-color: var(--heart3);
+    position: relative;
+    left: 43.5%;
+    top: 43.5%;
+}
+
+#rage {
+    background-color: var(--rage3);
+    position: relative;
+    top: 42.5%;
+    left: 2.5%;
+}
+
+#blood {
+    background-color: var(--blood3);
+    position: relative;
+    right: 3%;
+    top: 50%;
+}
+
+#doom {
+    background-color: var(--doom3);
+    position: relative;
+    right: 10.25%;
+    top: 42.5%;
+}
+
+#void {
+    background-color: var(--void3);
+    position: relative;
+    right: 6.5%;
+    top: 22.5%;
+}
+
+#classring {
+    position: relative;
+    bottom: 57%;
+    left: 6.25%;
+    font-size: x-small;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+svg #SVGID_x5F_2_x5F_{
+    transform: rotate(300deg);
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+}
+
+svg #SVGID_x5F_1_x5F_ {
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+}
+
+tspan .badge-footer {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+}
+
+#sidebar {
+    order: 1;
+}
+
+h1, h2, h3 {
+    color: var(--accent);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong, b {
+    color: var(--text);
+}
+
+.box {
+    background-color: var(--darkbg);
+    border: 1px solid var(--accent);
+    padding: 10px;
+    color: var(--mainbg);
+}
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: var(--darkbg);
+}
+
+
+ @media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #sidebar {
+    order: 2;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
